@@ -151,7 +151,7 @@ void uart_task(void *p){
     while(1){
         //enviar os dados pela uart no formato: 00000000 01001101 00000011 11111111 (845 enviado pelo x)
         // aqui eu preciso definir se ve
-        uint8_t AXIS;
+        
         adc_t dado;
 
         if (xQueueReceive(xQueueADC, &dado, portMAX_DELAY)){
